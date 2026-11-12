@@ -555,7 +555,7 @@ function rt(){if(location.hash=="#game3d")win("g3d")}addEventListener("hashchang
 const T=window.THREE,$=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),E=window.EB||{tone(){},sfx(){},say(){}};
 const ez=x=>x<0?0:x>1?1:x*x*(3-2*x),cl=(v,a,b)=>Math.max(a,Math.min(b,v));
 /* ---- Slot foto: isi path gambar di sini, atau panggil setFoto("absen25","foto/zakky.jpg") ---- */
-window.FOTO={kelas:"",absen03:"",absen10:"",absen13:"",absen14:"",absen18:"",absen25:"",absen26:"",absen33:"",absen34:""};
+window.FOTO={kelas:"kelas.jpeg",absen03:"rino.jpeg",absen10:"imet.jpeg",absen13:"tari.jpeg",absen14:"eros.jpeg",absen18:"kemas.jpeg",absen25:"zakky.jpeg",absen26:"fiya.jpeg",absen33:"elia.jpeg",absen34:"bunga.jpeg"};
 function fotos(){$$("[data-foto]").forEach(e=>{const u=window.FOTO[e.dataset.foto];if(u&&!e.querySelector("img")){const i=new Image();i.onerror=()=>{i.remove();e.classList.remove("has");if(!e.querySelector("span")){const t=document.createElement("span");t.style.color="#c0392b";t.textContent="Foto tidak ditemukan: "+u;e.appendChild(t)}};i.src=u;i.alt=e.getAttribute("aria-label")||"Foto";e.appendChild(i);e.classList.add("has");const s=e.querySelector("span");if(s)s.remove()}})}
 window.setFoto=(k,u)=>{window.FOTO[k]=u;fotos()};fotos();
 /* ---- menu hp ---- */

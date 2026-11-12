@@ -110,7 +110,7 @@ footer .btn.o{color:var(--ink)}
 .kelas{margin:36px 0 0}.kelas .ph{width:100%;border-radius:20px}.kelas figcaption{text-align:center;margin-top:14px;font-weight:800}
 .kosong{background:var(--kertas);border-radius:16px;padding:18px 20px;margin-top:20px;color:var(--ink);font-weight:700}
 .tile .capin{border:0;width:min(60%,170px);outline-offset:2px}.tile .dl{position:absolute;top:8px;right:8px;width:30px;height:30px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-weight:800;cursor:pointer;z-index:2}.lb .dl{display:none}
-#bg{display:none;padding:6px 14px;box-shadow:none;font-size:20px;order:9}nav .logo{margin-right:auto}nav>div{margin-right:14px}
+#mnu{display:none;padding:6px 14px;box-shadow:none;font-size:20px;order:9}nav .logo{margin-right:auto}nav>div{margin-right:14px}
 #ld{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:linear-gradient(#7cc8f5,#eaf8ff 70%,#58b653 70%);transition:opacity .7s,visibility .7s}#ld.off{opacity:0;visibility:hidden}
 #ld .lw{text-align:center;width:min(86vw,360px)}#ld .crest{height:64px;width:auto;animation:ldp 1.6s ease-in-out infinite}@keyframes ldp{50%{transform:translateY(-8px)}}
 .lk{width:100%;overflow:visible;margin-top:8px}.lk .sa,.lk .sb{animation:ldl .9s ease-in-out infinite alternate}.lk .sb{animation-direction:alternate-reverse}@keyframes ldl{to{transform:translateY(-16px)}}
@@ -119,7 +119,7 @@ footer .btn.o{color:var(--ink)}
 #ld p{margin:0;font:800 19px var(--disp);color:var(--ink)}@media(prefers-reduced-motion:reduce){#ld *{animation:none!important}}
 @media(max-width:900px){
 body{font-size:16px}section{padding:64px 16px}.pg{padding:92px 16px 56px}.lab{grid-template-columns:1fr;gap:20px}
-#bg{display:block}nav{padding:10px 14px;gap:8px}nav .logo{font-size:17px}nav>div{margin:0}
+#mnu{display:block}nav{padding:10px 14px;gap:8px}nav .logo{font-size:17px}nav>div{margin:0}
 nav>div{display:none!important;position:absolute;top:calc(100% + 8px);left:12px;right:12px;max-width:none!important;background:#fff;border-radius:20px;padding:12px;box-shadow:0 14px 40px rgba(0,0,0,.25);grid-template-columns:1fr 1fr;gap:8px}
 nav.open>div{display:grid!important}nav>div a{padding:12px 14px;border-radius:12px;background:#eef6ff;text-align:center}nav>div a.on{background:var(--oren);color:#fff}
 #hero{min-height:100svh;padding-top:96px}#hero h1{font-size:clamp(40px,13vw,64px)}#hero p{font-size:16px}.quick a{display:inline-block;margin:4px 8px}
@@ -134,7 +134,7 @@ footer{padding:60px 16px}.fl{height:44px;margin:4px}.gf{height:60vh}.ctl .btn{mi
 <div id="ld" role="status" aria-live="polite"><div class="lw"><img class="crest" alt=""><svg class="lk" viewBox="0 0 260 150" aria-hidden="true"><line class="gd" x1="0" y1="141" x2="260" y2="141" stroke="#2f8a3d" stroke-width="6"/><g class="sa"><path d="M100 94L98 124" stroke="#e3202b" stroke-width="9" stroke-linecap="round"/><ellipse cx="98" cy="132" rx="24" ry="13" fill="#8a5230"/><path d="M98 124Q80 80 86 62" stroke="#e6d3a3" stroke-width="3" fill="none"/></g><g class="sb"><path d="M160 94L162 124" stroke="#e3202b" stroke-width="9" stroke-linecap="round"/><ellipse cx="162" cy="132" rx="24" ry="13" fill="#7a4627"/><path d="M162 124Q180 80 174 62" stroke="#e6d3a3" stroke-width="3" fill="none"/></g><rect x="104" y="46" width="52" height="50" rx="16" fill="#b4bac5"/><rect x="104" y="72" width="52" height="24" rx="10" fill="#e3202b"/><circle cx="130" cy="28" r="20" fill="#d99a6c"/><path d="M110 24Q112 6 130 8Q148 6 150 24Q140 14 130 16Q120 14 110 24z" fill="#1c1410"/><circle cx="123" cy="29" r="2.6" fill="#2a1608"/><circle cx="137" cy="29" r="2.6" fill="#2a1608"/><path d="M123 37q7 5 14 0" stroke="#7a2323" stroke-width="2.4" fill="none"/></svg><div class="lb2"><i></i></div><p>Memuat Egrang Batok</p></div></div>
 <script>(function(){var t0=Date.now(),l=document.getElementById("ld");function off(){if(l){l.classList.add("off");setTimeout(function(){l&&l.remove();l=0},900)}}function go(){setTimeout(off,Math.max(0,1800-(Date.now()-t0)))}if(document.readyState=="complete")go();else addEventListener("load",go);setTimeout(off,7000)})()</script>
 <div id="prog"></div><img class="crest wm" alt="" aria-hidden="true"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><image id="lg" width="20" height="20" preserveAspectRatio="xMidYMid meet"/></defs></svg>
-<nav id="nav"><a class="logo" href="#hero"><img class="crest" alt="Logo SMA Negeri 1 Sidayu">Egrang Batok</a><div><a href="#hero">Beranda</a><a href="#sejarah">Sejarah</a><a href="#lab">Lab 3D</a><a href="#game3d">Game 3D</a><a href="#galeri">Galeri</a><a href="#komik">Komik</a><a href="#fisika">Fisika</a><a href="#kuis">Kuis</a><a href="#tautan">Tautan</a></div><button id="bg" class="btn o" aria-label="Menu" aria-expanded="false">☰</button></nav>
+<nav id="nav"><a class="logo" href="#hero"><img class="crest" alt="Logo SMA Negeri 1 Sidayu">Egrang Batok</a><div><a href="#hero">Beranda</a><a href="#sejarah">Sejarah</a><a href="#lab">Lab 3D</a><a href="#game3d">Game 3D</a><a href="#galeri">Galeri</a><a href="#komik">Komik</a><a href="#fisika">Fisika</a><a href="#kuis">Kuis</a><a href="#tautan">Tautan</a></div><button id="mnu" class="btn o" aria-label="Menu" aria-expanded="false">☰</button></nav>
 
 <div class='page on' id='p-beranda'><section id="hero">
  <div class="layer" data-s=".05" style="top:6%"><svg viewBox="0 0 1200 300"><defs><g id="aw"><ellipse cx="0" cy="30" rx="120" ry="30" fill="#fff"/><circle cx="-40" cy="10" r="40" fill="#fff"/><circle cx="30" cy="0" r="50" fill="#fff"/><ellipse cx="0" cy="48" rx="110" ry="14" fill="#dff1fb"/></g></defs><g class="awan" opacity=".95"><use href="#aw" x="230" y="90"/><use href="#aw" x="860" y="60" transform="translate(300 40) scale(.8)"/><use href="#aw" x="1050" y="190" transform="translate(-200 -30) scale(.6)"/></g></svg></div>
@@ -556,10 +556,10 @@ const T=window.THREE,$=s=>document.querySelector(s),$$=s=>document.querySelector
 const ez=x=>x<0?0:x>1?1:x*x*(3-2*x),cl=(v,a,b)=>Math.max(a,Math.min(b,v));
 /* ---- Slot foto: isi path gambar di sini, atau panggil setFoto("absen25","foto/zakky.jpg") ---- */
 window.FOTO={kelas:"",absen03:"",absen10:"",absen13:"",absen14:"",absen18:"",absen25:"",absen26:"",absen33:"",absen34:""};
-function fotos(){$$("[data-foto]").forEach(e=>{const u=window.FOTO[e.dataset.foto];if(u&&!e.querySelector("img")){const i=new Image();i.src=u;i.alt=e.getAttribute("aria-label")||"Foto";e.appendChild(i);e.classList.add("has");const s=e.querySelector("span");if(s)s.remove()}})}
+function fotos(){$$("[data-foto]").forEach(e=>{const u=window.FOTO[e.dataset.foto];if(u&&!e.querySelector("img")){const i=new Image();i.onerror=()=>{i.remove();e.classList.remove("has");if(!e.querySelector("span")){const t=document.createElement("span");t.style.color="#c0392b";t.textContent="Foto tidak ditemukan: "+u;e.appendChild(t)}};i.src=u;i.alt=e.getAttribute("aria-label")||"Foto";e.appendChild(i);e.classList.add("has");const s=e.querySelector("span");if(s)s.remove()}})}
 window.setFoto=(k,u)=>{window.FOTO[k]=u;fotos()};fotos();
 /* ---- menu hp ---- */
-const nv=$("#nav"),bg=$("#bg");bg.onclick=e=>{e.stopPropagation();nv.classList.toggle("open");bg.setAttribute("aria-expanded",nv.classList.contains("open"))};
+const nv=$("#nav"),bg=$("#mnu");bg.onclick=e=>{e.stopPropagation();nv.classList.toggle("open");bg.setAttribute("aria-expanded",nv.classList.contains("open"))};
 addEventListener("hashchange",()=>nv.classList.remove("open"));document.addEventListener("click",e=>{if(!e.target.closest("nav"))nv.classList.remove("open")});
 if(!T)return;
 /* ---- rig 3D: drag, zoom roda, cubit 2 jari, tombol +/-, kamera halus ---- */
